@@ -1,0 +1,23 @@
+{
+  "name": "message-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env --import tsx src/server.ts",
+    "start": "node --env-file-if-exists=.env --import tsx src/server.ts"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "socket.io": "4.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.1",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}
